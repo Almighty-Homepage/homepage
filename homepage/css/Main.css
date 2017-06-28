@@ -1,0 +1,43 @@
+.photoFrame {
+  height: 200px;
+  border: solid 1px black;
+}
+
+.bodyFrame {
+  height: 300px;
+}
+
+.introduce {
+  padding-right: 50px;
+  float: left;
+  width: 400px;
+}
+
+.notice {
+  float: left;
+  width: 550px;
+}
+
+td {
+  height: 25px;
+}
+.title {
+  padding: 0;
+  width: 350px;
+}
+
+.time {
+  padding: 0;
+  width: 130px;
+}
+
+.time .hour {
+  color: #888;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.writer {
+  padding: 0;
+  width: 70px;
+}

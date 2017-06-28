@@ -1,0 +1,81 @@
+table {
+  border-collapse: collapse;
+}
+
+thead{
+  border-bottom: double 3px #888;
+  text-align: center;
+}
+
+td {
+  padding: 0;
+}
+
+tbody tr {
+  border-bottom: solid 1px #888;
+}
+
+tbody tr td {
+  text-align: center;
+}
+
+hr {
+  margin: 0;
+}
+
+.topContent {
+  height: 40px;
+}
+
+.number {
+  width: 70px;
+}
+
+.writer {
+  padding: 0;
+  width: 80px;
+}
+
+.title {
+  padding: 0;
+  width: 660px;
+}
+
+.bodyTitle {
+  padding: 0;
+  width: 660px;
+  text-align: left;
+}
+
+.time {
+  padding: 0;
+  width: 150px;
+}
+
+.time .hour {
+  color: #888;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.hits {
+  width: 70px;
+}
+
+.bottom {
+  width: 1000px;
+  display: inline-block;
+}
+
+.search_target, .search_input, .button{
+  display: inline-block;
+}
+
+.write {
+  float: right;
+  text-align: right;
+}
+
+.pagination {
+  text-align: center;
+}
