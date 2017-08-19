@@ -1,40 +1,71 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <title>Almighty</title>
-  <!-- CSS, JS External 정의 -->
-  <link rel="stylesheet" type="text/css" href="../css/Skeleton.css">
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
+<script type="text/javascript" src="./HW1_60.js"></script>
+<title>회원가입</title>
 </head>
-
 <body>
-  <header>
-    <div class="logo">
-      <a href="./Main.html" id="logo">Almighty</a>
-    </div>
-    <div class="account">
-      <p class="accountComponent">15황태욱</p>
-      <a class="accountComponent" href="#" onclick="login()">로그인</a>
-      <a class="accountComponent" href="./Register.html">회원가입</a>
-    </div>
-  </header>
+<div style="border-style:solid;text-align : center;">
+2017 웹 프로그래밍 HW1<br>
+본 약관은  "HW1-회원가입"서비스를 이용하기 위해서는 회원등록을 완료해야합니다.
+</div>
 
-  <div class="menuBar">
-    <a href="./History.html" class="menuButton">연혁</a>
-    <a href="./NoticeBoard.html" class="menuButton">공지사항</a>
-    <a href="./ReferenceBoard.html" class="menuButton">자료게시판</a>
-    <a href="./ActivityBoard.html" class="menuButton">활동게시판</a>
-    <a href="./FreeBoard.html" class="menuButton">자유게시판</a>
-    <a href="./PhotoBoard.html" class="menuButton">사진첩</a>
-  </div>
-  <form action="" method="post">
-    
-  </form>
+<form name="form" action="check.jsp" >
+	<table>
+		<thead>
+			<tr>
+				<th><input type="checkbox" name="checkbox">약관에 동의합니다.</th><!-- 약관에 동의 한다는 checkbox -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>ID</td>
+				<td><input type="text" name="id" size="40"
+					placeholder="문자 or 숫자" onblur="id_check()"></td><!-- id를 입력하는 칸 -->
+				<td><button  value="Resister" onclick="id_duplication()" formaction="duplication-check.jsp">중복 체크</button></td><!--중복체크를 누르면 중복을 확인하는 jsp 페이지로 이동한 후 동아온다.-->
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" size="40"
+					placeholder="문자 or 숫자,8자리 이상" onblur="pass_word()"></td><!-- password를 입력하는 칸 -->
+			</tr>
+			<tr>
+				<td>Password 확인</td>
+				<td><input type="password" name="password-check" size="40" onblur="password_check()"></td><!-- password를 확인하는 칸 -->
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name" size="40"
+					placeholder="문자열만 입력 가능" onblur="name_check()"></td><!-- 이름을 입력하는 칸 -->
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td><input type="text" name="number" size="40"
+					placeholder="ex)01(0)-000(0)-0000" onblur="number_check()"></td><!-- 전화번호를 입력하는 칸 -->
+			</tr>
+			<tr>
+				<td>이메일</td>
+				<td><input type="text" name="email" size="40" onblur="email_check()"></td><!-- 이메일을 입력하는 칸 -->
+			</tr>
+			<tr>
+				<td>생년월일</td>
+				<td><input type="date" name="date" size="40"></td><!-- 생년원일을 입력하는 칸 -->
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td><input type="button" value="회원가입" onclick="null_check();"></td><!-- 회원가입 버튼, 누르면  비어있는 칸인지 검사한다.-->
+				<!--전체 input에 onblur 속성을 주어 유효하지 않는 값인 경우 초기화 시키고, 회원가입버튼을 누를 경우 빈 칸을 검사하기 때문에 회원가입을 눌렀을 떄 따로 유효성검사를 해주지않아도된다. -->
+			</tr>
+		</tfoot>
+	</table>
 
-  <footer>
-    <p>Copyright (C) 2017 Almighty</p>
-  </footer>
+
+	</form>
+
 </body>
-
 </html>
