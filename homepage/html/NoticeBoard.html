@@ -5,104 +5,104 @@
   <meta charset="UTF-8">
   <title>Almighty</title>
   <!-- CSS, JS External 정의 -->
-  <link rel="stylesheet" type="text/css" href="../css/Skeleton.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../css/Skeleton.css"> -->
   <link rel="stylesheet" type="text/css" href="../css/BoardSkeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/NoticeBoard.css">
+  <script type ="text/javascript" src="../js/Menu.js"></script>
 </head>
-
-<body>
+<body onload="Now('2')">
   <header>
-    <div class="logo">
-      <a href="./Main.html" id="logo">Almighty</a>
-    </div>
-    <div class="account">
-      <p class="accountComponent">15황태욱</p>
-      <a class="accountComponent" href="#" onclick="login()">로그인</a>
-      <a class="accountComponent" href="./Register.html">회원가입</a>
+      <img src="../css/images/logo.png" class="Logo" onclick="home()">
+      <!-- <p class="accountComponent">15황태욱</p> -->
+      <div class="Login">
+      <a class="accountComponent" href="#" onclick="login()">LOGIN</a>
+      |
+      <a class="accountComponent" href="./Register.html">SIGN UP</a>
     </div>
   </header>
+		<div class="Bar">
+      <button onclick="location_change('1')" class="menuButton" id = "menu1">연혁</button>
+      <button onclick="location_change('2')" class="menuButton" id = "menu2">공지사항</button>
+      <button onclick="location_change('3')" class="menuButton" id = "menu3">자료게시판</button>
+      <button onclick="location_change('4')" class="menuButton" id = "menu4">활동게시판</button>
+      <button onclick="location_change('5')" class="menuButton" id = "menu5">자유게시판</button>
+      <button onclick="location_change('6')" class="menuButton" id = "menu6">사진첩</button>
+		</div>
 
-  <div class="menuBar">
-    <a href="./History.html" class="menuButton">연혁</a>
-    <a href="./NoticeBoard.html" class="menuButton">공지사항</a>
-    <a href="./ReferenceBoard.html" class="menuButton">자료게시판</a>
-    <a href="./ActivityBoard.html" class="menuButton">활동게시판</a>
-    <a href="./FreeBoard.html" class="menuButton">자유게시판</a>
-    <a href="./PhotoBoard.html" class="menuButton">사진첩</a>
-  </div>
-  <div class="board">
-    <h3>공지사항</h3>
-    <hr>
-    <table>
-      <thead>
-        <tr class="topContent">
-          <td class="number">번호</td>
-          <td class="title">제목</td>
-          <td class="writer">작성자</td>
-          <td class="date">날짜</td>
-          <td class="hits">조회수</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="number">1</td>
-          <td class="bodyTitle"><a href="#">배고프다아아아</a></td>
-          <td class="writer">15황태욱</td>
-          <td class="time">
-            <span class="date">2017-06-28</span>
-            <span class="hour">13:06</span>
-          </td>
-          <td class="hits">1</td>
-        </tr>
-        <tr>
-          <td class="number">1</td>
-          <td class="bodyTitle"><a href="#">배고프다아아아</a></td>
-          <td class="writer">15황태욱</td>
-          <td class="time">
-            <span class="date">2017-06-28</span>
-            <span class="hour">13:06</span>
-          </td>
-          <td class="hits">1</td>
-        </tr>
-        <tr>
-          <td class="number">1</td>
-          <td class="bodyTitle"><a href="#">배고프다아아아</a></td>
-          <td class="writer">15황태욱</td>
-          <td class="time">
-            <span class="date">2017-06-28</span>
-            <span class="hour">13:06</span>
-          </td>
-          <td class="hits">1</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="bottom">
-      <select name="search_target">
-  			<option value="title_content">제목+내용</option>
-        <option value="title">제목</option>
-        <option value="content">내용</option>
-        <option value="nickName">닉네임</option>
-        <option value="id">아이디</option>
-        <option value="tag">태그</option>
-      </select>
-      <div class="search_input">
-        <input type="text" name="search_keyword" value=""/>
-      </div>
-      <button class="button" onclick="">검색</button>
-      <div class="write">
-        <button class="button" onclick="">글쓰기</button>
-      </div>
-      <div class="pagination">
-        <a href="" class="firstButton">첫 페이지</a>
-        <b>1</b>
-        <a href="" class="lastButton">끝 페이지</a>
+    <div class="contents">
+      <h3>공지사항</h3>
+      <hr>
+      <table>
+        <thead>
+          <tr class="topContent">
+            <td class="number">번호</td>
+            <td class="title">제목</td>
+            <td class="writer">작성자</td>
+            <td class="date">날짜</td>
+            <td class="hits">조회수</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="number">1</td>
+            <td class="bodyTitle"><a href="#">배고프다아아아</a></td>
+            <td class="writer">15황태욱</td>
+            <td class="time">
+              <span class="date">2017-06-28</span>
+              <span class="hour">13:06</span>
+            </td>
+            <td class="hits">1</td>
+          </tr>
+          <tr>
+            <td class="number">1</td>
+            <td class="bodyTitle"><a href="#">배고프다아아아</a></td>
+            <td class="writer">15황태욱</td>
+            <td class="time">
+              <span class="date">2017-06-28</span>
+              <span class="hour">13:06</span>
+            </td>
+            <td class="hits">1</td>
+          </tr>
+          <tr>
+            <td class="number">1</td>
+            <td class="bodyTitle"><a href="#">배고프다아아아</a></td>
+            <td class="writer">15황태욱</td>
+            <td class="time">
+              <span class="date">2017-06-28</span>
+              <span class="hour">13:06</span>
+            </td>
+            <td class="hits">1</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="bottom">
+        <select name="search_target">
+    			<option value="title_content">제목+내용</option>
+          <option value="title">제목</option>
+          <option value="content">내용</option>
+          <option value="nickName">닉네임</option>
+          <option value="id">아이디</option>
+          <option value="tag">태그</option>
+        </select>
+        <div class="search_input">
+          <input type="text" name="search_keyword" value=""/>
+        </div>
+        <button class="button" onclick="">검색</button>
+        <div class="write">
+          <button class="button" onclick="">글쓰기</button>
+        </div>
+        <div class="pagination">
+          <a href="" class="firstButton">첫 페이지</a>
+          <b>1</b>
+          <a href="" class="lastButton">끝 페이지</a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <footer>
-    <p>Copyright (C) 2017 Almighty</p>
-  </footer>
+    <footer>
+      <p>Copyright (C) 2017 Almighty</p>
+    </footer>
 </body>
+
+
 
 </html>
