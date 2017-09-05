@@ -7,38 +7,36 @@
   <!-- CSS, JS External 정의 -->
   <link rel="stylesheet" type="text/css" href="../css/Skeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/PhotoBoard.css">
+    <script type ="text/javascript" src="../js/Menu.js"></script>
 </head>
 
-<body>
+<body onload="Now('6')">
   <header>
-    <div class="logo">
-      <a href="./Main.html" id="logo">Almighty</a>
-    </div>
-    <div class="account">
-      <p class="accountComponent">15황태욱</p>
-      <a class="accountComponent" href="#" onclick="login()">로그인</a>
-      <a class="accountComponent" href="./Register.html">회원가입</a>
+      <img src="../css/images/logo.png" class="Logo" onclick="home()">
+      <!-- <p class="accountComponent">15황태욱</p> -->
+      <div class="Login">
+      <a class="accountComponent" href="#" onclick="login()">LOGIN</a>
+      |
+      <a class="accountComponent" href="./Register.html">SIGN UP</a>
     </div>
   </header>
+		<div class="Bar">
+      <button onclick="location_change('1')" class="menuButton" id = "menu1">연혁</button>
+      <button onclick="location_change('2')" class="menuButton" id = "menu2">공지사항</button>
+      <button onclick="location_change('3')" class="menuButton" id = "menu3">자료게시판</button>
+      <button onclick="location_change('4')" class="menuButton" id = "menu4">활동게시판</button>
+      <button onclick="location_change('5')" class="menuButton" id = "menu5">자유게시판</button>
+      <button onclick="location_change('6')" class="menuButton" id = "menu6">사진첩</button>
+		</div>
 
-  <div class="menuBar">
-    <a href="./History.html" class="menuButton">연혁</a>
-    <a href="./NoticeBoard.html" class="menuButton">공지사항</a>
-    <a href="./ReferenceBoard.html" class="menuButton">자료게시판</a>
-    <a href="./ActivityBoard.html" class="menuButton">활동게시판</a>
-    <a href="./FreeBoard.html" class="menuButton">자유게시판</a>
-    <a href="./PhotoBoard.html" class="menuButton">사진첩</a>
-  </div>
-  <div class="photoFrame">
-    <h3>사진첩</h3>
-    <hr>
-    <table>
-    </table>
-  </div>
-
-  <footer>
-    <p>Copyright (C) 2017 Almighty</p>
-  </footer>
+    <div class="contents">
+      <h3>사진첩</h3>
+      <hr>
+      <table>
+      </table>
+    </div>
+    <footer>
+      <p>Copyright (C) 2017 Almighty</p>
+    </footer>
 </body>
-
 </html>

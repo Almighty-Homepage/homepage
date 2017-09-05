@@ -9,67 +9,100 @@
   <link rel="stylesheet" type="text/css" href="../css/Main.css">
 </head>
 
-<body>
+<body onload="Now('0')">
   <header>
-    <div class="logo">
-      <a href="./Main.html" id="logo">Almighty</a>
-    </div>
-    <div class="account">
-      <p class="accountComponent">15황태욱</p>
-      <a class="accountComponent" href="#" onclick="login()">로그인</a>
-      <div class="white_content" id="open">
-        <div>
-          ID<div id="close_button"><a href="#close">닫기</a></div><br>
-          <input type="text"><br>
-          PASSWARD<br>
-          <input type="text">
-          <input type="button" value="로그인">
-        </div>
-        </div>
-      <a class="accountComponent" href="./Register.html">회원가입</a>
-    </div>
+    <img src="../css/images/logo.png" class="Logo" onclick="home()">
+    <div class="Login">
+    <a class="accountComponent" href="#" onclick="login()">LOGIN</a>
+    |
+    <a class="accountComponent" href="./Register.html">SIGN UP</a>
+  </div>
   </header>
 
-  <div class="menuBar">
-    <a href="./History.html" class="menuButton">연혁</a>
-    <a href="./NoticeBoard.html" class="menuButton">공지사항</a>
-    <a href="./ReferenceBoard.html" class="menuButton">자료게시판</a>
-    <a href="./ActivityBoard.html" class="menuButton">활동게시판</a>
-    <a href="./FreeBoard.html" class="menuButton">자유게시판</a>
-    <a href="./PhotoBoard.html" class="menuButton">사진첩</a>
-  </div>
-  <div class="photoFrame">
-    <b>사진첩</b>
-    <hr>
-    <!--<img class="photo" id="photo01" src="../img/main.png">-->
-  </div>
-  <div class="bodyFrame">
-    <div class="introduce">
-      <b>소개</b>
-      <hr>
-      <p>배고프다아아아</p>
-    </div>
-    <div class="notice">
-      <b>공지사항</b>
-      <hr>
-      <table>
-        <tbody>
-          <tr>
-            <td class="title">배고프다아아아</td>
-            <td class="time">
-              <span class="date">2017-06-28</span>
-              <span class="hour">13:06</span>
-            </td>
-            <td class="writer">15황태욱</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="Bar">
+    <button onclick="location_change('1')" class="menuButton" id = "menu1">연혁</button>
+    <button onclick="location_change('2')" class="menuButton" id = "menu2">공지사항</button>
+    <button onclick="location_change('3')" class="menuButton" id = "menu3">자료게시판</button>
+    <button onclick="location_change('4')" class="menuButton" id = "menu4">활동게시판</button>
+    <button onclick="location_change('5')" class="menuButton" id = "menu5">자유게시판</button>
+    <button onclick="location_change('6')" class="menuButton" id = "menu6">사진첩</button>
   </div>
 
-  <footer>
-    <p>Copyright (C) 2017 Almighty</p>
-  </footer>
-</body>
+  <!-- Wrapper-->
+	<div id="wrapper">
+		<!-- Nav -->
+			<nav id="nav">
+				<a href="#notice" class="icon fa-home active"><span>공지사항</span></a>
+				<a href="#album" class="icon fa-folder"><span>사진첩</span></a>
+				<a href="#introduce" class="icon fa-info-circle"><span>동아리 소개</span></a>
+			</nav>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- 공지사항 -->
+					<article id="notice" class="panel">
+			  		<h1>Notice</h1>
+							<!--연혁-->
+						<table>
+							<tr>
+								<td>
+								2017년
+								</td>
+								<td  onclick="postnTr();">
+								<font id="postnTab">▼</font>
+								</td>
+							</tr>
+							<tr id="postnTr" class="hide">
+								<td>회장</td>
+								<td>황태욱</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+								2018년
+		  					</td>
+							</tr>
+						</table>
+
+						<a href="#album" class="jumplink pic">
+							<span class="arrow icon fa-chevron-right"></span>
+						</a>
+
+					</article>
+
+				<!-- 사진첩 -->
+					<article id="album" class="panel">
+						<header>
+							<h2>Album</h2>
+						</header>
+						<section>
+
+						</section>
+					</article>
+
+						<!-- 소개 -->
+							<article id="introduce" class="panel">
+								<header>
+									<h2>Almighty introduce</h2>
+								</header>
+
+							</article>
+					</div>
+
+
+    <footer>
+        Copyright (C) 2017 Almighty
+    </footer>
+
+    </div>
+
+  <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/skel.min.js"></script>
+    <script src="../js/skel-viewport.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/main.js"></script>
+    <script type ="text/javascript" src="../js/Menu.js"></script>
+  </body>
 
 </html>

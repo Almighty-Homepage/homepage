@@ -1,0 +1,13 @@
+
+div.executive {/*동아리 임원진 부분*/
+  height: 300px;
+}
+
+div.contents {
+  margin-left:  10%;
+  width: 80%;
+  border-width: 1px;
+  border-color: white;
+  background-color: white;
+  border-radius: 5px;
+}
