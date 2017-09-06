@@ -79,14 +79,17 @@
   }
 
   div.contents {/*연혁*/
-    margin-left: 300px;
-    width: 1000px;
+    margin-left: 10%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 80%;
     border-width: 1px;
     border-color: white;
     background-color: white;
     border-radius: 5px;
   }
-
+    
   footer {
     text-align: center;
   }
