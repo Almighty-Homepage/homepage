@@ -1,3 +1,78 @@
+header { /*로고이미지와 로그인, 회원가입이 있는 맨 윗부분*/
+  height: 150px;
+}
+
+.Logo{/*로고 이미지*/
+  width: 400px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  padding-top : 20px;
+  border: 0;
+}
+img.Logo:hover{
+  cursor: pointer;
+}
+div.Login{
+  text-align: right;
+}
+.accountComponent {/*로그인, 회원 가입, 로그인한 사용자 이름*/
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+a.accountComponent:hover{
+  color: red;
+}
+
+body {/*Bar와 연혁 내용을 포함한 부분*/
+  background-image: url("images/overlay.png"), url("images/bg.jpg");
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #777777;
+  margin: auto;
+  width: 100%;
+  min-width: 1000px;
+  min-height: 100%;
+  overflow-y: scroll;
+  background-attachment: fixed;
+  font-size: 14pt;
+  line-height: 1.75em;
+}
+
+div.Bar {/*메뉴바*/
+  overflow: hidden;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 300;
+  background-color: black;
+  opacity: 0.6;
+  display: inline-block;
+  height: 50px;
+}
+
+div.Bar button:hover{/*bar의 각 manu들에 마우스를 올렸을 때 변화*/
+  background-image:url("images/bg.jpg");
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  cursor: pointer;
+}
+
+.menuButton{/*버튼*/
+  background-color: black;
+  opacity: 0.6;
+  color : white;
+  border: 0;
+  height: 50px;
+  width: 16.3%;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 div.executive {/*동아리 임원진 부분*/
   height: 300px;
@@ -10,4 +85,8 @@ div.contents {
   border-color: white;
   background-color: white;
   border-radius: 5px;
+}
+
+footer {
+  text-align: center;
 }

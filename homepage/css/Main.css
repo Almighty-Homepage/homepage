@@ -1,7 +1,13 @@
+
 @import url("font-awesome.min.css");
 .title {
   padding: 0;
   width: 350px;
+}
+
+.photoFrame {
+  height: 200px;
+  border: solid 1px black;
 }
 #close_button{
 	display :inline;
